@@ -50,6 +50,7 @@ export const Logo = styled.a`
 `;
 export const Language = styled.div`
   display: flex;
+  cursor: pointer;
   h4:first-of-type {
     margin-right: 10px;
   }
