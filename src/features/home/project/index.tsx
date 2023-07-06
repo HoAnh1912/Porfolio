@@ -7,31 +7,15 @@ import {
 } from "../../../styles/globals";
 import BlockProject from "./components/list-project";
 import { ContentProject, ProjectWrapper } from "./style";
+import { listProject } from "../../../constants/project";
 
-const listProject = [
-  {
-    id: 1,
-    name: "wooder",
-    describe:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting",
-    img: "../images/project-first.jpg",
-    link: "https://wooder-plum.vercel.app/",
-  },
-  {
-    id: 2,
-    name: "gbox",
-    describe:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting",
-    img: "../images/project-second.jpg",
-    link: "https://wooder-plum.vercel.app/",
-  },
-];
 
-const Project = ({ projectSection }: any) => {
+
+const Project = () => {
   const { t } = useTranslation("project");
 
   return (
-    <ProjectWrapper ref={projectSection}>
+    <ProjectWrapper >
       <Container className="container">
         <ContentProject>
           <Title>{t("project.title")}</Title>
@@ -41,7 +25,7 @@ const Project = ({ projectSection }: any) => {
               <small>{t("project.des_small")}</small>
             </Description>
           </DescriptionWrapper>
-          {listProject.map((item: any) => {
+          {listProject.map((item) => {
             let positionProject = "";
             if (item.id % 2 == 0) {
               positionProject = "project-left";

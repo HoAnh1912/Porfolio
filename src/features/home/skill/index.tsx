@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { useTranslation } from "next-i18next";
-import { renderToHTML } from "next/dist/server/render";
+import { listSkill } from "../../../constants/skills";
 import { Container } from "../../../styles";
 import {
   Description,
@@ -10,52 +11,18 @@ import {
 import BlockSkill from "./component";
 import { ContentSkill, ListSkill, SkillWrapper, WrapperDes } from "./style";
 
-const listSkill = [
-  {
-    id: 1,
-    name: "html",
-  },
-  {
-    id: 2,
-    name: "css/scss",
-  },
 
-  {
-    id: 3,
-    name: "javascript",
-  },
-  {
-    id: 4,
-    name: "typescript",
-  },
-  {
-    id: 5,
-    name: "react js",
-  },
-  {
-    id: 6,
-    name: "next js",
-  },
-  {
-    id: 7,
-    name: "photoshop",
-  },
-  {
-    id: 8,
-    name: "figma",
-  },
-];
 
-const Skill = ({ skillSection }: any) => {
+const Skill = () => {
   const { t } = useTranslation("skill");
   return (
-    <SkillWrapper className="section" ref={skillSection}>
+    <SkillWrapper className="section">
       <Container>
         <ContentSkill>
-          <Title color>{t("skill.title")}</Title>
+          <Title $color = {true}>{t("skill.title")}</Title>
           <DescriptionWrapper>
             <WrapperDes>
-              <Description color>
+              <Description $color = {true}>
                 {t("skill.des")}
                 <small> {t("skill.des_small")}</small>
               </Description>

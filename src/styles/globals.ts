@@ -3,7 +3,7 @@ import { device } from "./media";
 import theme from "./theme";
 
 interface ColorProps {
-  color?: any;
+  $color?: boolean;
 }
 export const GlobalStyle = createGlobalStyle`
 html,
@@ -124,7 +124,8 @@ export const Title = styled.h1<ColorProps>`
   font-weight: 900;
   text-transform: uppercase;
   font-size: 115px;
-  color: ${({ color }) => (color ? "black" : "white")};
+  color: ${color =>
+    color.$color ? "black" : "white"};
   ${device.tablet} {
     font-size: 97px;
   }
@@ -148,7 +149,7 @@ export const Description = styled.h3<ColorProps>`
   text-transform: uppercase;
   letter-spacing: 1.5px;
   line-height: 1.8;
-  color: ${({ color }) => (color ? "black" : "white")};
+  color: ${ color  => (color.$color == true ? "black" : "white")};
   ${device.tablet} {
     font-size: 23px;
   }

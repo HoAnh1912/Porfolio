@@ -2,6 +2,7 @@
 module.exports = {
   env: {},
   reactStrictMode: true,
+  productionBrowserSourceMaps: false,
   redirects: () => [],
   rewrites: () => [],
   i18n: {
@@ -19,4 +20,8 @@ module.exports = {
 
     return config;
   },
+    compiler: {
+      // ssr and displayName are configured by default
+      styledComponents: true,
+    },
 };

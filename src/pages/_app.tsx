@@ -1,7 +1,7 @@
 import { appWithTranslation } from "next-i18next";
 import type { AppProps } from "next/app";
 import "../../public/fonts/font.css";
-import MouseContextProvider from "../components/mouse-cursor/context/MouseContextProvider";
+import '../components/cursor/cursor.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

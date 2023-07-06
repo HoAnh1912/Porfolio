@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-sync-scripts */
+/* eslint-disable @next/next/no-title-in-document-head */
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 

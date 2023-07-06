@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import CustomCursor from "../../../components/mouse-cursor";
 import { Container } from "../../../styles";
 import {
   Description,
@@ -16,22 +15,29 @@ import {
   Intro,
   TextInfo,
 } from "./style";
+import { Cursor } from "../../../components/cursor";
 
-const Banner = ({ homeSection, handleShowContact }: any) => {
+interface IBanner {
+  handleShowContact?: () => void
+}
+
+const Banner = ({ handleShowContact }: IBanner) => {
   const { t } = useTranslation("home");
 
   return (
     <>
-      <BannerWrapper ref={homeSection}>
+      <Cursor isGelly={true} />
+      <BannerWrapper>
         <Container>
           <ContentBanner>
             <HeadBanner>
-              <Title color>{t("home.title")}</Title>
+              <Title $color={true} >{t("home.title")}</Title>
               <Intro>
-                <DescriptionWrapper>
-                  <Description color>{`${t("home.intro")}`}</Description>
-                  <Description color>{`${t("home.intro_two")}`}</Description>
-                  <ButtonContact onClick={handleShowContact}>
+
+                <DescriptionWrapper >
+                  <Description $color={true}>{`${t("home.intro")}`}</Description>
+                  <Description $color={true}>{`${t("home.intro_two")}`}</Description>
+                  <ButtonContact data-cursor-exclusion style={{ color: '#000000' }} data-cursor-size="200px" onClick={handleShowContact}>
                     Get Contact
                   </ButtonContact>
                 </DescriptionWrapper>

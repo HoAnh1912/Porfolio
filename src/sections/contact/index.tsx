@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -38,10 +39,10 @@ const Contact = ({ showContact, handleContact }: any) => {
                   <img src="../images/arrow-right.svg" alt="" />
                 </WrapperImage>
                 <ContactPhone>
-                  <a href="mailto:anhho0508@gmail.com">
+                  <Link href="mailto:anhho0508@gmail.com">
                     thianhho0508@gmail.com
-                  </a>
-                  <a href="tel:0354780433">+354780433</a>
+                  </Link>
+                  <Link href="tel:0354780433">+354780433</Link>
                 </ContactPhone>
               </WrapperPhone>
             </ContactPhoneGmail>
