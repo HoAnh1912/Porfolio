@@ -11,7 +11,7 @@ export const listSkill: ListSkillProps[] = [
   },
   {
     id: 3,
-    name: 'Tailwind',
+    name: 'Tailwind CSS',
   },
   {
     id: 4,
