@@ -19,7 +19,7 @@ const BlockProject = ({
   linkProject,
 }: ProjectProps) => {
 
-  
+
   return (
     <MyProject className={className}>
       <WrapperImage width={50}>
@@ -30,9 +30,9 @@ const BlockProject = ({
       <DescribeProject>
         <ProjectName>{nameProject}</ProjectName>
         <p>{describe}</p>
-        <Link href={linkProject}>View Project</Link>
+        <Link href={linkProject}><a target="_blank">View Project</a></Link>
       </DescribeProject>
-    </MyProject>
+    </MyProject >
   );
 };
 

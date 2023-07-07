@@ -19,10 +19,10 @@ const Skill = () => {
     <SkillWrapper className="section">
       <Container>
         <ContentSkill>
-          <Title $color = {true}>{t("skill.title")}</Title>
+          <Title $color={true}>{t("skill.title")}</Title>
           <DescriptionWrapper>
             <WrapperDes>
-              <Description $color = {true}>
+              <Description $color={true}>
                 {t("skill.des")}
                 <small> {t("skill.des_small")}</small>
               </Description>
@@ -32,12 +32,11 @@ const Skill = () => {
             </WrapperDes>
           </DescriptionWrapper>
           <ListSkill>
-            {listSkill.map((item: any) => {
+            {listSkill.map((item) => {
               return (
                 <BlockSkill
                   key={item.id}
-                  nameSkill={item.name}
-                  imageSkill={item.img}
+                  name={item.name}
                 />
               );
             })}

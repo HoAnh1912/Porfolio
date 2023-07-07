@@ -1,10 +1,11 @@
+import { ListSkillProps } from "../../../../type/skill.interface";
 import { SkillItem, SkillItemInner } from "./style";
 
-const BlockSkill = ({ nameSkill }: any) => {
+const BlockSkill = ({ name }: ListSkillProps) => {
   return (
     <>
       <SkillItem>
-        <SkillItemInner>{nameSkill} </SkillItemInner>{" "}
+        <SkillItemInner id="stick-title">{name}</SkillItemInner>
       </SkillItem>
     </>
   );

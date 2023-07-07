@@ -3,7 +3,7 @@ import { device } from "../../../../styles/media";
 import theme from "../../../../styles/theme";
 
 export const SkillItem = styled.div`
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   padding-right: 0.71429rem;
   padding-left: 0.71429rem;
   position: relative;
@@ -16,7 +16,7 @@ export const SkillItem = styled.div`
   }
 `;
 
-export const SkillItemInner = styled.div`
+export const SkillItemInner = styled.p`
   height: 22.10526vw;
   text-transform: capitalize;
   border: 1px solid ${theme.colors.border};
@@ -25,10 +25,12 @@ export const SkillItemInner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20vw;
+  height: 15vw;
   background: linear-gradient(#000 0 0) top / var(--p, 0) no-repeat;
   transition: 0.4s, background-position 0s;
   cursor: pointer;
+  text-align: center;
+  padding: 5px;
 
   ${device.tablet} {
     font-size: 24px;

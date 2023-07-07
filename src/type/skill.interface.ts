@@ -1,4 +1,5 @@
 export interface  ListSkillProps {
-    id: number,
+    id?: number,
     name: string,
+    imageSkill?:string,
 }
