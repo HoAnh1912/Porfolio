@@ -39,10 +39,10 @@ const Contact = ({ showContact, handleContact }: any) => {
                   <img src="../images/arrow-right.svg" alt="" />
                 </WrapperImage>
                 <ContactPhone>
-                  <Link href="mailto:anhho0508@gmail.com">
-                    thianhho0508@gmail.com
+                  <Link href="mailto:anhho191297@gmail.com">
+                  anhho191297@gmail.com
                   </Link>
-                  <Link href="tel:0354780433">+354780433</Link>
+                  {/* <Link href="tel:0354780433">+354780433</Link> */}
                 </ContactPhone>
               </WrapperPhone>
             </ContactPhoneGmail>
@@ -63,10 +63,10 @@ const Contact = ({ showContact, handleContact }: any) => {
               <Link href="https://www.facebook.com/profile.php?id=100005531386995">
                 <FacebookIcon className="face" />
               </Link>
-              <Link href="https://www.linkedin.com/in/h%E1%BB%93-th%E1%BB%8B-%C3%A1nh-89230618b/">
+              <Link href="#">
                 <LinkedInIcon className="linkIn" />
               </Link>
-              <Link href="mailto: thianhho0508@gmail.com">
+              <Link href="mailto: anhho191297@gmail.com">
                 <EmailRoundedIcon className="mail" />
               </Link>
             </Social>
