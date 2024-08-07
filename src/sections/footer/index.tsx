@@ -10,7 +10,9 @@ const Footer = () => {
         <ContentFooter>
           <h3>Let’s make something together!</h3>
           <InfoContact>
-            <Link href="mailto:anhho191297@gmail.com">anhho191297@gmail.com</Link>
+            <Link href="mailto:hoanh1912.me@gmail.com">
+              hoanh1912.me@gmail.com
+            </Link>
             {/* <Link href="tel: +0354780433">+0354780433</Link> */}
           </InfoContact>
           <Signature>Anh</Signature>

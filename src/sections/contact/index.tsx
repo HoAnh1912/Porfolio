@@ -39,8 +39,8 @@ const Contact = ({ showContact, handleContact }: any) => {
                   <img src="../images/arrow-right.svg" alt="" />
                 </WrapperImage>
                 <ContactPhone>
-                  <Link href="mailto:anhho191297@gmail.com">
-                  anhho191297@gmail.com
+                  <Link href="mailto:hoanh1912.me@gmail.com">
+                    hoanh1912.me@gmail.com
                   </Link>
                   {/* <Link href="tel:0354780433">+354780433</Link> */}
                 </ContactPhone>

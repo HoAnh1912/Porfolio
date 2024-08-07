@@ -68,7 +68,6 @@ export const IntroContact = styled.div`
     }
     @media screen and (min-width: 1024px) and (max-width: 1200px) {
       font-size: 90px;
-      color: red;
     }
   }
   #img-myself {
